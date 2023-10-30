@@ -11,8 +11,8 @@
 
 body {
   font-family: "Young serif";
-  display: flex;
   background-color: #f6f7fb;
+  display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
