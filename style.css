@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
 
+/* These are some general stylings for root , custom variables and body...*/
 * {
   box-sizing: border-box;
 }
@@ -20,6 +21,7 @@ body {
   margin: 0;
 }
 
+/* This is the styling codes for the container and progress container in which progress steps are there... */
 .container {
   text-align: center;
 }
@@ -32,6 +34,7 @@ body {
   position: relative;
 }
 
+/* This is the styling for empty progress bar behind the progress steps... */
 .progress-container::before {
   content: "";
   background-color: var(--line-border-empty);
@@ -45,6 +48,8 @@ body {
   transition: 0.4s ease;
 }
 
+
+/* This is actual filling progress bar behind the progress steps... */
 .progress {
   background-color: var(--line-border-fill);
   width: 0%;
@@ -57,6 +62,7 @@ body {
   transition: 0.4s ease;
 }
 
+/* These stylings are for the progress circle in normal and active form... */
 .circle {
   background-color: #f6f7fb;
   height: 30px;
@@ -73,6 +79,8 @@ body {
   border-color: var(--line-border-fill);
 }
 
+
+/* These stylings are for the buttons... */
 .btn {
   background-color: var(--line-border-fill);
   border: 0;
