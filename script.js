@@ -1,3 +1,4 @@
+// These are the constants containing the HTML elements for further process...
 const prev = document.getElementById("prev");
 const next = document.getElementById("next");
 const circles = document.querySelectorAll(".circle");
@@ -5,6 +6,7 @@ const progress = document.getElementById("progress");
 
 let activeCircle = 1;
 
+// These eventlisteners functions are for the buttons to control progress steps numbers...
 next.addEventListener("click", () => {
   activeCircle++;
   if (activeCircle > circles.length) {
@@ -20,6 +22,7 @@ prev.addEventListener("click", () => {
   update();
 });
 
+// This update function is for the dynamic progress bar filling animation... 
 function update() {
   circles.forEach((circle, idx) => {
     if (idx < activeCircle) {
